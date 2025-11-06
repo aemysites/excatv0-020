@@ -1,0 +1,51 @@
+{
+  "variantName": "cards-philosophy",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2025-11-05T17:31:18.131Z",
+  "sourceContext": {
+    "originUrl": "https://www.kddi.com/corporate/philosophy/",
+    "originPage": "KDDI Corporate Philosophy page - Philosophy sections",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "philosophy-chapters",
+    "imagePattern": "noimg",
+    "textLength": "long"
+  },
+  "contentPattern": {
+    "structure": "heading + list items",
+    "headingMaxLength": 30,
+    "descriptionMaxLength": 500,
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "philosophy or values sections",
+      "principles or guidelines content",
+      "text-heavy card layouts without images",
+      "list-based content in card format"
+    ],
+    "notSuitableFor": [
+      "image-heavy cards",
+      "product or feature showcases with images",
+      "promotional cards with CTAs"
+    ],
+    "similarVariants": []
+  },
+  "designTokens": {
+    "primaryColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "fontFamily": "system-ui",
+    "headingSize": "1.2rem",
+    "padding": "16px"
+  },
+  "usage": {
+    "pagesUsing": ["/corporate/philosophy/index"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-05T17:31:18.131Z"
+  }
+}

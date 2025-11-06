@@ -1,0 +1,50 @@
+{
+  "variantName": "columns-corporate",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2025-11-05T17:31:18.094Z",
+  "sourceContext": {
+    "originUrl": "https://www.kddi.com/corporate/philosophy/",
+    "originPage": "KDDI Corporate Philosophy page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "wide",
+    "purpose": "corporate-content",
+    "imagePattern": "side-by-side",
+    "textLength": "medium"
+  },
+  "contentPattern": {
+    "structure": "image + text side by side",
+    "headingMaxLength": 0,
+    "descriptionMaxLength": 500,
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "corporate pages with image and text layouts",
+      "about sections with CEO photos",
+      "content requiring side-by-side image-text presentation"
+    ],
+    "notSuitableFor": [
+      "multi-column layouts without images",
+      "grid layouts with many items",
+      "vertical stacked content"
+    ],
+    "similarVariants": []
+  },
+  "designTokens": {
+    "primaryColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "fontFamily": "system-ui",
+    "headingSize": "1.5rem",
+    "padding": "24px"
+  },
+  "usage": {
+    "pagesUsing": ["/corporate/philosophy/index"],
+    "reuseCount": 1,
+    "lastUsed": "2025-11-05T17:31:18.094Z"
+  }
+}
