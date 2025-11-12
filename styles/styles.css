@@ -18,6 +18,10 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --accent-color: #ff6b35;
+  --accent-bg-color: #fff5f2;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -39,6 +43,13 @@
   /* nav height */
   --nav-height: 64px;
   --header-height: var(--nav-height);
+
+  /* spacing */
+  --spacing-xs: 8px;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 40px;
+  --spacing-xl: 64px;
 }
 
 /* fallback fonts */
@@ -111,11 +122,27 @@ h6 {
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--dark-color);
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--heading-font-size-xl);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size: var(--heading-font-size-l);
+  color: var(--text-color);
+}
+
 h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
@@ -254,9 +281,48 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
-  padding: 40px 0;
+  padding: var(--spacing-xl) 0;
+}
+
+main .section.accent {
+  background: linear-gradient(135deg, var(--accent-bg-color) 0%, #ffe8e0 100%);
+  margin: 0;
+  padding: var(--spacing-xl) 0;
+  position: relative;
+}
+
+main .section.accent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--link-color));
+}
+
+main .section.accent h2 {
+  border-bottom-color: var(--accent-color);
+  color: var(--dark-color);
 }
 
 .section.hidden {
   display: none;
+}
+
+/* Brand logo images */
+main img[alt="KDDI"],
+main img[alt="KDDI BUSINESS"],
+main img[alt="au"],
+main img[alt="WAKONX"],
+main img[alt="UQ mobile"],
+main img[alt="povo"] {
+  max-width: 200px;
+  margin: var(--spacing-m) 0;
+}
+
+/* CEO photo styling */
+main img[alt="CEO Photo"] {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
